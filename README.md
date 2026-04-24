@@ -13,6 +13,9 @@
 |01. |CSS        |Look & Feel - Cascading Style Sheet   |
 |01. |Javascript |Behavior - Programing Language        |
 
+![profile](src/imgs/profile.jpg)
+**Luis Cabarca**
+
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
 [VERVEL URL](https://vervel.app)
