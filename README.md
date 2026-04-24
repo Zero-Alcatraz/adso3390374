@@ -14,7 +14,7 @@
 |01. |Javascript |Behavior - Programing Language        |
 
 ![profile](src/imgs/profile.jpg)
-**Luis Cabarca**
+**Luis Camilo Cabarca Ramirez**
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
