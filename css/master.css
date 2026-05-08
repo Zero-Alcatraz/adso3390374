@@ -1,0 +1,111 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1004' height='120.5' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='9.1' stroke-opacity='0.62'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");    background-attachment: fixed;    background-attachment: fixed;
+    background-position: center;
+    color:#fffc;
+    font-family: Poppins;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    /* Main */
+    main {
+        padding: 1rem;
+        width: 380px;
+        header.mainmenu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                font-weight: 800;
+                border-bottom: 2px solid #fffc;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+            h3 {
+                font-weight: 500;
+                margin: 0;
+            }
+            h4 {
+                font-weight: 300;
+                font-size: 0.8rem;
+                margin: 0;
+            }
+            img {
+                border: 6px solid #fffc;
+                border-radius: 50%;
+                height: 280px;
+                object-fit: cover;
+                width: 280px;
+            }
+        }
+        menu.mainmenu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.6rem;
+            a:is(:link, :visited) {
+                background-color: #fff9;
+                border-radius: 8rem;
+                color: #0009;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 0.6rem;
+                text-decoration: none;
+                padding: 0.4rem;
+                transition: all 0.4s ease-in;
+                width: 300px;
+                span {
+                    background-color: #874e19;
+                    color: #fffc;
+                    font-size: 1.6rem;
+                    border-radius: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 70px;
+                    width: 70px;
+                }
+                aside {
+                    width: 200px;
+                    h4 {
+                        font-size: 1.2rem;
+                        font-weight: 800;
+                        margin: 0;
+                    }
+                    small {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+            a:is(:hover) {
+                transform: scale(1.05) translateX(10px);
+                background-color: #874e19;
+                color: #fff9;
+                span {
+                    background-color: #fff9;
+                    color: #0009;
+                }
+            }
+        }
+    }
+}
