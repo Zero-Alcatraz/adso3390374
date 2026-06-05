@@ -90,6 +90,7 @@ background-size: cover;
             h2 {
                 font-weight: 300;
                 font-size: 1.2rem;
+
             }
             h3 {
                 font-weight: 500;
@@ -195,7 +196,7 @@ background-size: cover;
                 }
             xmp {
                 background-color: #0009;
-                padding-left: 1.6rem;
+                padding-left: 1.1rem;
                 padding-bottom: 1rem;
                 border-radius: 0.4rem;
                 color: #70bb14;
