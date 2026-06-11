@@ -30,7 +30,7 @@
 </ul>
 </xmp>
         </section>
-                <section>
+        <section>
             <h2>02-Sibling <em>+</em></h2>
             <p>Creates sibling elements</p>
             <h4>Example</h4>
@@ -158,7 +158,6 @@
 </ul>
 </xmp>
         </section>
-
         <section>
             <h2>12-Level Up <em style="font-size: 1.2rem;">^</em></h2>
             <p>Climbs uo one level in the element tree hierarchy</p>
@@ -190,7 +189,6 @@
 </section>
 </xmp>
         </section>
-
         <section>
             <h2>14-Lorem Ipsum <em style="font-size: 0.7rem;">Lorem</em></h2>
             <p>Generates placeholder "Lorem Ipsum" text </p>
@@ -216,6 +214,49 @@
             <p>Generates meta tags quickly</p>
             <h4>Example:</h4>
             <p>meta:vp — &lt;meta name="viewport" content="width=device-width..."&gt;</p>
+        </section>
+
+        <section class="challenge-section">
+            <h2>17-challenge emmet</h2>
+            <p>Generate complex HTML structures with minimal typing</p>
+            <h4>Example:</h4>
+            <p>header#header>nav.navbar.navbar-inverse>div.container>div.navbar-header>button[type="button"].navbar-toggle>span.sr-only{Toggle navigation}+span.icon-bar+span.icon-bar+span.icon-bar^^a.navbar-brand[href="index.php"]>img[src="imgs/logo.png" alt=""]^^^div.collapse>ul.nav.navbar-nav>li>a.link[href="index.html"]{inicio}^^li.active.link>a[href="login.html"]{ingresar}^^li>a.link[href="registro.html"]{registrarse}^^li>a.link[href="contacto.html"]{contacto}</p>
+            <h4>Result:</h4>
+<xmp class="challenge-box">
+<header id="header">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-togger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="class=iconbar"></span>
+                    <span class="class=iconbar"></span>
+                    <span class="class=iconbar"></span>
+                </button>
+                <a href="index.php" class="navbar-brand">
+                    <img src="imgs/logo.png" alt="">
+                </a>
+            </div>
+            <div class="class="collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html" class="link">inicio</a>
+                    </li>
+                    <li>
+                        <a href="login.html">ingresar</a>
+                    </li>
+                    <li>
+                        <a href="registro.html" class="link">registrarse</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="link">contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+</xmp>
         </section>
     </main>
 </body>
