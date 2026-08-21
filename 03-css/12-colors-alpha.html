@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-colors-alpha</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+<style>
+    div.mario{
+        background: url(../src/imgs/mario.png) no-repeat center;
+        background-size: cover;
+        height: 440px;
+        margin: 0 auto;
+        width: 316px;
+        div {
+            height: calc(440px/3);
+            border: 2px solid #0009;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            &.box1 {background-color: #ffffffcc;}
+            &.box2 {background-color: hsla(0, 0%, 100%, 0.533);}
+            &.box3 {background-color: hsla(0, 0%, 100%, 0.267);}
+        }
+    }
+</style>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+    </a>
+        <main>
+        <header class="mainmenu">
+            <h1>12-colors-alpha</h1>
+            <h4>The fourth alpha channel allows you to apply opacity or transparency to the color.</h4>
+        </header>
+        <section>
+            <div class="mario">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
