@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-pseudoclasses</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <style>
+        .caja-ejemplo {
+            border: 2px solid #333;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .hover-ejemplo button {
+            padding: 10px 20px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .hover-ejemplo button:hover {
+            background: #4f46e5;
+            transform: scale(1.05);
+        }
+
+        .active-ejemplo button {
+            padding: 10px 20px;
+            background: #22c55e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .active-ejemplo button:active {
+            background: #16a34a;
+            transform: scale(0.95);
+        }
+
+        .focus-ejemplo input {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+            transition: all 0.3s;
+        }
+        .focus-ejemplo input:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+        }
+
+        .visited-ejemplo a {
+            color: #6366f1;
+        }
+        .visited-ejemplo a:visited {
+            color: #8b5cf6;
+        }
+
+        .nth-child-ejemplo li:nth-child(odd) {
+            background: #e2e8f0;
+        }
+        .nth-child-ejemplo li:nth-child(even) {
+            background: white;
+        }
+        .nth-child-ejemplo li:nth-child(3) {
+            background: #6366f1;
+            color: white;
+        }
+
+        .first-last-ejemplo p:first-child {
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .first-last-ejemplo p:last-child {
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .not-ejemplo p:not(.excluido) {
+            color: #6366f1;
+        }
+        .not-ejemplo .excluido {
+            color: #ef4444;
+        }
+
+        .empty-ejemplo div:empty {
+            height: 20px;
+            background: #ef4444;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path>
+        </svg>
+    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>20 - pseudoclasses</h1>
+            <h4>Is used to define a special state of an element.</h4>
+        </header>
+        <section>
+            <h4>Hover</h4>
+            <div class="caja-ejemplo hover-ejemplo">
+                <button>Pasa el mouse aquí</button>
+            </div>
+
+            <h4>Active</h4>
+            <div class="caja-ejemplo active-ejemplo">
+                <button>Haz clic aquí</button>
+            </div>
+
+            <h4>Focus</h4>
+            <div class="caja-ejemplo focus-ejemplo">
+                <input type="text" placeholder="Haz clic aquí">
+            </div>
+
+            <h4>Visited</h4>
+            <div class="caja-ejemplo visited-ejemplo">
+                <a href="https://google.com">Enlace visitado (cambia de color)</a>
+            </div>
+
+            <h4>Nth-child</h4>
+            <div class="caja-ejemplo nth-child-ejemplo">
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3 (estilo especial)</li>
+                    <li>Elemento 4</li>
+                    <li>Elemento 5</li>
+                </ul>
+            </div>
+
+            <h4>First-child / Last-child</h4>
+            <div class="caja-ejemplo first-last-ejemplo">
+                <p>Primer hijo (rojo)</p>
+                <p>Hijo del medio</p>
+                <p>Último hijo (verde)</p>
+            </div>
+
+            <h4>Not</h4>
+            <div class="caja-ejemplo not-ejemplo">
+                <p>Este texto es azul</p>
+                <p class="excluido">Este texto es rojo (excluido)</p>
+                <p>Este texto es azul</p>
+            </div>
+
+            <h4>Empty</h4>
+            <div class="caja-ejemplo empty-ejemplo">
+                <div>Contenido</div>
+                <div></div>
+                <div>Contenido</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
