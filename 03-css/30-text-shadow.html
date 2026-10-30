@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-text-shadow</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <style>
+        section {
+            p.txt {
+                font-size: 2rem;
+                margin-block: 4rem;
+                text-align: center;
+
+                &.txt1 {
+                    color: black;
+                    text-shadow: 0 0 6px yellow;
+                }
+
+                &.txt2 {
+                    color: yellow;
+                    text-shadow: -4px -4px 6px white;
+                }
+
+                &.txt3 {
+                    color: #4d434377;
+                    font-size: 100px;
+                    text-shadow:    
+                    0 1px 0 #fff,
+                    0 2px 0 #fff,
+	                0 2px 0 #fff,
+	                0 3px 0 #fff,
+	                0 4px 0 #fff,
+	                0 5px 0 #fff,
+	                0 6px 0 #fff,
+	                0 7px 0 #fff,
+	                0 8px 0 #fff,
+	                0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	                0 5px 10px rgba(0,0,0,.2),
+	                0 10px 10px rgba(0,0,0,.2),
+	                0 20px 20px rgba(0,0,0,.3);
+                    }
+
+                    &.txt4{
+                        color: white;
+                        font-size: 4rem;
+                        text-shadow: 3px 6px 0 blue ;
+                    }
+            }
+        }
+</style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+    </a>
+        <main>
+        <header class="mainmenu">
+            <h1>30-text-shadow</h1>
+            <h4>Property that adds shadow effects directly to text content, taking values for offset, blur radius, and color.  </h4>
+        </header>
+        <section>
+            <p class="txt txt1">ADSO</p>
+            <p class="txt txt2">C.P.I.C</p>
+            <p class="txt txt3">SENA</p>
+            <p class="txt txt4">Caldas</p>
+        </section>
+    </main>
+</body>
+</html>

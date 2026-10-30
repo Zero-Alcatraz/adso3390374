@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31-filters</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <style>
+        section {
+            img.filter{
+                background: linear-gradient(45deg,red,blue);
+                background-size: 15px;
+                outline: 2px solid #fff;
+                border-radius: 14px;
+                corner-shape: squircle;
+                display: block ;
+                margin: 1rem auto;  
+                transition: all 0.4s ease-in;
+                padding: 0.4rem;
+                width: 140px;
+
+                &.filter1 {
+                    filter:grayscale(1)
+                }
+                &.filter2 {
+                    filter:blur(5px)
+                }
+                &.filter3 {
+                    filter:Sepia()
+                }
+                &.filter4 {
+                    filter:brightness(.4)
+                }
+                &.filter5 {
+                    filter:invert()
+                }
+                &.filter6 {
+                    filter:drop-shadow(0 0 12px #fff)
+                }
+                &.filter7 {
+                    filter:hue-rotate(180deg)
+                }
+                
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+    </a>
+        <main>
+        <header class="mainmenu">
+            <h1>31-filters</h1>
+            <h4>Property (`filter`) applying graphical transformations (e.g., `blur()`, `grayscale()`, `contrast()`, `drop-shadow()`) to elements before display.  </h4>
+        </header>
+        <section>
+            <h4>GrayScale</h4>
+            <img class="filter filter1" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>Blur</h4>
+            <img class="filter filter2" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>Sepia</h4>
+            <img class="filter filter3" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>Brightness</h4>
+            <img class="filter filter4" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>Invert</h4>
+            <img class="filter filter5" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>Drop Shadow</h4>
+            <img class="filter filter6" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>HUE Rotate</h4>
+            <img class="filter filter7" src="imgs/inosuke.png" alt="Inosuke">
+        </section>
+    </main>
+</body>
+</html>

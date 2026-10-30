@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32 - Clip path</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <style>
+        section{
+            div.clip {
+                background: url(imgs/pittsburgh.jpg) no-repeat center / cover;
+                border-radius: 14px;
+                corner-shape: squircle;
+                margin: 0 auto;
+                height: 300px;
+                transition: all 0.4s ease-in;
+                width: 300px;
+
+                &.clip1 {
+                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                    &:hover{
+                        clip-path: polygon(50% 0%, 100% 0, 100% 36%, 100% 74%, 100% 100%, 50% 100%, 0 100%, 0 60%, 0 37%, 0 0);
+                    }
+                }
+                &.clip2 {
+                    clip-path: polygon(0 24%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 25%, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 51%);
+                    &:hover{
+                        clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+    </a>
+        <main>
+        <header class="mainmenu">
+            <h1>32 - Clip Path</h1>
+            <h4> Property that creates a clipping region defining which parts of an element are visible (using shapes like circle(), polygon(), or SVG paths).</h4>
+        </header>
+        <section>
+            <h4>Example 01:</h4>
+            <div class="clip clip1"></div>
+            <h4>Example 02:</h4>
+            <div class="clip clip2"></div>
+        </section>
+    </main>
+</body>
+</html>
