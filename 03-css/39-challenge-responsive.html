@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39-Challenge Responsive</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+        * {
+            transition: all 0.5s ease;
+        }
+
+        body {
+            background-image: url(imgs/fondo-ff7.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+
+            main {
+                padding: 1rem;
+                /* 16px */
+                margin: 0 auto;
+                width: 1200px;
+
+                /* 1280px - (20px + 32px) */
+                header {
+                    figure.logo {
+                        background: url(imgs/logo-ff7.png) no-repeat center;
+                        background-size: contain;
+                        display: block;
+                        margin: 0 auto;
+                        padding: 0;
+                        height: 369px;
+                        width: 675px;
+                        max-width: 100%;
+                    }
+
+                    menu {
+                        padding: 0;
+                        margin: 2rem 0;
+                        text-align: center;
+
+                        .card {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 260px;
+                            margin: 0 0.6rem;
+                            background-color: #000000b3;
+                            border: 2px solid #fff;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            text-align: center;
+                            box-shadow: 0 4px 12px #00000080;
+
+                            &:hover {
+                                transform: translateY(-8px) scale(1.02);
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 160px;
+                                object-fit: cover;
+                                display: block;
+                            }
+
+                            h4 {
+                                margin: 0;
+                                padding: 0.6rem 0;
+                                background-color: #fff;
+                                color: #013571;
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                border-top: 2px solid #fff;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    margin-top: 2rem;
+
+                    .box {
+                        background-color: #000000b3;
+                        border: 2px solid #fff;
+                        border-radius: 8px;
+                        padding: 1.5rem;
+                        margin-bottom: 2rem;
+                        overflow: hidden;
+
+                        img {
+                            float: left;
+                            width: 250px;
+                            height: 160px;
+                            object-fit: cover;
+                            margin: 0 1.5rem 0.5rem 0;
+                            border: 2px solid #fff;
+                            border-radius: 6px;
+                        }
+
+                        .text {
+                            overflow: hidden;
+
+                            h2 {
+                                margin: 0 0 0.8rem 0;
+                                color: #fff;
+                                font-size: 1.8rem;
+                                text-align: left;
+                                border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+                                padding-bottom: 0.4rem;
+                            }
+
+                            p {
+                                margin: 0;
+                                color: #fff;
+                                text-align: justify;
+                                line-height: 1.8rem;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Breakpoint: 1280px  */
+        @media (max-width :1280px) {
+            body {
+                main {
+                    width: 800px;
+
+                    header {
+                        figure.logo {
+                            height: 250px;
+                            width: 450px;
+                        }
+
+                        menu {
+                            .card {
+                                width: 340px;
+                                margin: 0.6rem;
+
+                                img {
+                                    height: 150px;
+                                }
+
+                                h4 {
+                                    font-size: 1rem;
+                                    padding: 0.5rem 0;
+                                }
+                            }
+                        }
+                    }
+
+                    section {
+                        .box {
+                            padding: 1rem;
+
+                            img {
+                                width: 200px;
+                                height: 130px;
+                                margin-right: 1rem;
+                            }
+
+                            .text {
+                                h2 {
+                                    font-size: 1.4rem;
+                                }
+
+                                p {
+                                    font-size: 0.9rem;
+                                    line-height: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Breakpoint: < 800px */
+        @media (max-width :800px) {
+            body {
+                main {
+                    width: 380px;
+
+                    header {
+                        figure.logo {
+                            height: 150px;
+                            width: 280px;
+                        }
+
+                        menu {
+                            .card {
+                                display: block;
+                                width: 320px;
+                                margin: 0 auto 1rem;
+
+                                img {
+                                    height: 180px;
+                                }
+
+                                h4 {
+                                    font-size: 1.1rem;
+                                    padding: 0.5rem 0;
+                                }
+                            }
+                        }
+                    }
+
+                    section {
+                        .box {
+                            padding: 1rem;
+
+                            img {
+                                float: none;
+                                display: block;
+                                width: 100%;
+                                height: 180px;
+                                margin: 0 auto 1rem;
+                            }
+
+                            .text {
+                                h2 {
+                                    font-size: 1.3rem;
+                                    text-align: center;
+                                }
+
+                                p {
+                                    font-size: 0.9rem;
+                                    line-height: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+            <menu>
+                <div class="card">
+                    <img src="imgs/aeris.jpg" alt="aeris">
+                    <h4>Aeris Gainsborough</h4>
+                </div>
+                <div class="card">
+                    <img src="imgs/barret.jpg" alt="barret">
+                    <h4>Barret Wallace</h4>
+                </div>
+                <div class="card">
+                    <img src="imgs/yuffie.jpg" alt="yuffie">
+                    <h4>Yuffie Kurisagi</h4>
+                </div>
+                <div class="card">
+                    <img src="imgs/red.jpg" alt="red">
+                    <h4>Red XXIII</h4>
+                </div>
+            </menu>
+        </header>
+        <section>
+            <div class="box">
+                <img src="imgs/cloud.jpg" alt="cloud">
+                <div class="text">
+                    <h2>Cloud Strife</h2>
+                    <p>
+                        Cloud Strife es el protagonista principal de Final Fantasy VII. Exmiembro de SOLDADO, la unidad
+                        militar de élite de Shinra, Cloud se convierte en mercenario y es contratado por el grupo
+                        rebelde AVALANCHA para luchar contra la corporación Shinra y proteger la energía vital del
+                        planeta.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imgs/tifa.jpg" alt="tifa">
+                <div class="text">
+                    <h2>Tifa Lockhart</h2>
+                    <p>
+                        Tifa Lockhart es amiga de la infancia de Cloud y miembro clave de AVALANCHA. Es una maestra en
+                        artes marciales y la dueña del bar Seventh Heaven en los suburbios del Sector 7, el cual
+                        funciona como base secreta de la resistencia contra Shinra.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
