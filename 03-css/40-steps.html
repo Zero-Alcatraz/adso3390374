@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40-steps</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <style>
+        :root {
+            --size: 256px;
+        }
+
+        section {
+            div.bg {
+                background: url(imgs/bg-steps.png) no-repeat center;
+                background-size: cover;
+                border-radius: 12px;
+                corner-shape: squircle;
+                outline: 4px solid #000;
+                position: relative;
+                height: 600px;
+                width: 320px;
+
+                div#trainer {
+
+                    background: url(imgs/steps-all.png) no-repeat;
+                    height: var(--size);
+                    margin: 0 auto;
+                    position: absolute;
+                    bottom: 2rem;
+                    transform: scale(.8);
+                    left: 2rem;
+                    width: var(--size);
+                    animation: 0.4s animTrainer steps(4) infinite;
+
+
+                    &.front {
+                        background-position-y: 0;
+                    }
+
+                    &.left {
+                        background-position-y: calc(var(--size) *-1);
+                    }
+
+                    &.right {
+                        background-position-y: calc(var(--size) *-2);
+                    }
+
+                    &.back {
+                        background-position-y: calc(var(--size) *-3);
+                    }
+                }
+            }
+        }
+
+        @keyframes animTrainer {
+            100% {
+                background-position-x: -1024px;
+            }
+        }
+    </style>
+</head>
+
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path
+                d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z">
+            </path>
+        </svg>
+    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>40-steps</h1>
+            <h4>Timing function (steps()) used in CSS animations to split transitions into discrete frames, commonly
+                used for frame-by-frame sprite animations.</h4>
+        </header>
+        <section>
+            <div class="bg">
+                <div id="trainer" class="right"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
