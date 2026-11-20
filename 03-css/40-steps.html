@@ -78,10 +78,41 @@
         </header>
         <section>
             <div class="bg">
-                <div id="trainer" class="right"></div>
+                <div class="instructions">
+                    please press arrow keys:
+                    &larr; &uarr; &rarr; &darr;
+                </div>
+                <div id="trainer"></div>
             </div>
         </section>
     </main>
+    <script>
+        const trainer = document.getElementById('trainer');
+        document.addEventListener('keyup', function(e) {
+            /* console.log(e.keyCode); */
+            switch (e.keyCode) {
+                case 37: //arrow left
+                    trainer.className = '';
+                    trainer.classList.add('left')
+                    break;
+            
+                case 38: //arrow up
+                    trainer.className = '';
+                    trainer.classList.add('back')
+                    break;
+            
+                case 39: //arrow Right
+                    trainer.className = '';
+                    trainer.classList.add('right')
+                    break;
+            
+                case 40: //arrow down
+                    trainer.className = '';
+                    trainer.classList.add('front')
+                    break;
+            }
+            
+        });
+    </script>
 </body>
-
 </html>
